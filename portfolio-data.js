@@ -1,4 +1,4 @@
-// Real, unretouched portfolio images from Shine Room Beauty's public Booksy profile.
+// Real portfolio and treatment photographs supplied by the owner or sourced from Booksy.
 // Keep entries and captions bilingual. Add before/after labels only to documented pairs.
 window.SHINE_PORTFOLIO = [
   {
@@ -92,5 +92,44 @@ window.SHINE_PORTFOLIO = [
       pl: 'Indywidualne zdjęcie klientki dodane do opinii o wypełnianiu ust na profilu salonu w Booksy. Etap po zabiegu i ilość preparatu nie zostały określone. Efekty są indywidualne.'
     },
     source: 'https://d375139ucebi94.cloudfront.net/region2/ie/9393/review_photos/52a3f578c5644c0fa47eac523dec448b.jpeg'
+  },
+  {
+    id:'brows-new-grey',category:'brows',image:'assets/site/new-2026-11/brows-client-grey.jpg',width:1200,height:1600,
+    title:{en:'Brow portfolio',pl:'Portfolio brwi'},
+    description:{en:'A real client photograph supplied by Shine Room Beauty. An individual brow portfolio image; results vary.',pl:'Prawdziwe zdjęcie klientki przekazane przez Shine Room Beauty. Indywidualna realizacja brwi; efekty mogą się różnić.'},source:'owner-supplied'
+  },
+  {
+    id:'brows-new-denim',category:'brows',image:'assets/site/new-2026-11/brows-client-denim.jpg',width:1200,height:1600,
+    title:{en:'Brow portfolio',pl:'Portfolio brwi'},
+    description:{en:'A real client photograph supplied by Shine Room Beauty. An individual brow portfolio image; results vary.',pl:'Prawdziwe zdjęcie klientki przekazane przez Shine Room Beauty. Indywidualna realizacja brwi; efekty mogą się różnić.'},source:'owner-supplied'
+  },
+  {
+    id:'brows-new-red-hair',category:'brows',image:'assets/site/new-2026-11/brows-client-red-hair.jpg',width:1200,height:1600,
+    title:{en:'Brow portfolio',pl:'Portfolio brwi'},
+    description:{en:'A real client photograph supplied by Shine Room Beauty. An individual brow portfolio image; results vary.',pl:'Prawdziwe zdjęcie klientki przekazane przez Shine Room Beauty. Indywidualna realizacja brwi; efekty mogą się różnić.'},source:'owner-supplied'
+  },
+  {
+    id:'brows-new-blonde',category:'brows',image:'assets/site/new-2026-11/brows-client-blonde.jpg',width:1200,height:1600,
+    title:{en:'Brow portfolio',pl:'Portfolio brwi'},
+    description:{en:'A real client photograph supplied by Shine Room Beauty. An individual brow portfolio image; results vary.',pl:'Prawdziwe zdjęcie klientki przekazane przez Shine Room Beauty. Indywidualna realizacja brwi; efekty mogą się różnić.'},source:'owner-supplied'
+  },
+  {
+    id:'brows-new-striped',category:'brows',image:'assets/site/new-2026-11/brows-client-striped.jpg',width:1200,height:1600,
+    title:{en:'Brow portfolio',pl:'Portfolio brwi'},
+    description:{en:'A real client photograph supplied by Shine Room Beauty. An individual brow portfolio image; results vary.',pl:'Prawdziwe zdjęcie klientki przekazane przez Shine Room Beauty. Indywidualna realizacja brwi; efekty mogą się różnić.'},source:'owner-supplied'
+  },
+  {
+    id:'brows-session-01',category:'studio',kind:'process',image:'assets/site/new-2026-11/brow-treatment-aneta.jpg',width:1536,height:2048,
+    title:{en:'Aneta at work',pl:'Aneta podczas pracy'},
+    description:{en:'Aneta carrying out a brow permanent-makeup appointment. A real photograph from the studio, not a before-and-after comparison.',pl:'Aneta podczas wykonywania makijażu permanentnego brwi. Prawdziwe zdjęcie z gabinetu, nie porównanie przed i po.'},source:'owner-supplied'
+  },
+  {
+    id:'brows-session-02',category:'studio',kind:'process',image:'assets/site/new-2026-11/powder-brows-session-detail.jpg',width:900,height:1600,
+    title:{en:'Powder Brows, in progress',pl:'Powder Brows w trakcie zabiegu'},
+    description:{en:'A real moment during a brow permanent-makeup appointment, taken from the salon’s own video. No effect or treatment stage is inferred from this frame.',pl:'Prawdziwy moment wykonywania makijażu permanentnego brwi, z własnego filmu salonu. Kadr nie stanowi deklaracji efektu ani etapu gojenia.'},source:'owner-supplied-video'
   }
 ];
+
+// Lead with the newly supplied work, keeping the older verified portfolio available.
+const shineFeaturedPhotos=['brows-session-01','brows-new-grey','brows-new-denim','lips-01','brows-new-blonde','brows-new-red-hair','brows-session-02','brows-new-striped'];
+window.SHINE_PORTFOLIO=shineFeaturedPhotos.map(id=>window.SHINE_PORTFOLIO.find(p=>p.id===id)).filter(Boolean).concat(window.SHINE_PORTFOLIO.filter(p=>!shineFeaturedPhotos.includes(p.id)));
