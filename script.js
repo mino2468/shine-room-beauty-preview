@@ -82,7 +82,7 @@
   function enhanceTreatmentDetail(){const target=document.querySelector('.treatment-story>div:first-child');if(!target)return;const s=data.services.find(s=>s.id===new URLSearchParams(location.search).get('service'));if(s)target.insertAdjacentHTML('beforeend',`${servicePhoto(s)}${procedureSteps(s)}${treatmentOptions(s)}${serviceGallery(s)}`);}
   let filter='all', visible=portfolio.slice(), selected=0, lastPhotoButton;
   const lightbox=document.querySelector('#lightbox');
-  const homePhotos=()=>['brows-session-01','brows-new-grey','lips-01','brows-new-blonde'].map(id=>portfolio.find(p=>p.id===id)).filter(Boolean);
+  const homePhotos=()=>['brows-session-01','brows-new-mint','lips-01','brows-new-blonde'].map(id=>portfolio.find(p=>p.id===id)).filter(Boolean);
   if(current==='gallery.html'){
     const lead=document.querySelector('.page-heading .lead');lead.dataset.en='Real client photographs and moments from the treatment room. Explore brows, lips and Aneta at work, then open any image for a closer look.';lead.dataset.pl='Prawdziwe zdjęcia klientek i chwile z gabinetu. Zobacz brwi, usta i Anetę podczas pracy, a następnie otwórz zdjęcie, aby przyjrzeć się detalom.';
     document.body.dataset.descriptionEn='Real client portfolio and brow treatment photographs from Shine Room Beauty by Aneta Mackiewicz in Clane.';document.body.dataset.descriptionPl='Prawdziwe portfolio klientek i zdjęcia wykonywania makijażu permanentnego brwi w Shine Room Beauty w Clane.';
