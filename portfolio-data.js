@@ -104,7 +104,7 @@ window.SHINE_PORTFOLIO = [
     description:{en:'A real client photograph supplied by Shine Room Beauty. An individual brow portfolio image; results vary.',pl:'Prawdziwe zdjęcie klientki przekazane przez Shine Room Beauty. Indywidualna realizacja brwi; efekty mogą się różnić.'},source:'owner-supplied'
   },
   {
-    id:'brows-new-red-hair',category:'brows',image:'assets/site/new-2026-11/brows-client-red-hair.jpg',width:1200,height:1600,
+    id:'brows-new-red-hair',category:'brows',image:'assets/site/new-2026-11/brows-client-red-hair-later.jpg',width:1200,height:1600,
     title:{en:'Brow portfolio',pl:'Portfolio brwi'},
     description:{en:'A real client photograph supplied by Shine Room Beauty. An individual brow portfolio image; results vary.',pl:'Prawdziwe zdjęcie klientki przekazane przez Shine Room Beauty. Indywidualna realizacja brwi; efekty mogą się różnić.'},source:'owner-supplied'
   },
