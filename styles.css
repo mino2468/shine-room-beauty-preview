@@ -43,6 +43,7 @@ button:active,.button:active,.plain-link:active,.mobile-contact a:active,.treatm
 button:focus-visible,.button:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
 .treatment-photo-trigger{overflow:hidden}
 /* Account for the sticky header once, through target margins. */
+.studio-social{margin-top:28px;max-width:100%}.studio-social .micro-label{margin-bottom:10px}.studio-social .social-links{display:flex;flex-wrap:wrap;gap:12px 28px}.studio-social .plain-link{min-height:44px;font-size:14px;gap:24px}.footer-links [data-social]{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:180px;min-height:36px}.footer-links [data-social]>span{transition:transform .2s ease}@media(hover:hover){.footer-links [data-social]:hover>span{transform:translate(3px,-3px)}}@media(prefers-reduced-motion:reduce){.footer-links [data-social]:hover>span{transform:none}}
 html{scroll-padding-top:0}main{scroll-margin-top:110px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 @media(prefers-reduced-motion:reduce){a:hover,button:hover,a:active,button:active,.row-arrow,.treatment-photo-trigger:hover img{transform:none!important}}
